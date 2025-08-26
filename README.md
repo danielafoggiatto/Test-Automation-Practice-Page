@@ -106,12 +106,13 @@ pytest -v --html=report.html --self-contained-html
 | **Critérios de Aceite**      | Página *Test Automation* disponível: “Test Automation Practice Page”                                                                                                                                                                             |
 | **Escopo**                   | - Validação do login com senha correta e incorreta <br> - Validação da sessão do botão de seleção <br> - Validação dos buttons *Show alert*, mudar cor do fundo <br> - Upload de arquivo, checkbox, date picker, hiperlink, hover, iframe, modal |
 | **Fora do Escopo**           | Funcionalidade de *Tabbet Navigation*                                                                                                                                                                                                            |
-| **Resultado Geral Esperado** | Todas as funcionalidades funcionando conforme solicitado                                                                                                                                                                                         |
+| **Resultado Geral Esperado** | Todas as funcionalidades funcionando conforme solicitado       
+
+## Casos de Teste
+|
 
 | **Id** | **Objetivo**                                          | **Pré-condições**                         | **Passos**                                                          | **Resultado Esperado**                                                                                           | **Prioridade** |
 | ------ | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------- | ------------------------------
-
-## Casos de Teste
 
 ---------------------------------------------------------------------------------- | -------------- |
 | 001    | Validar a funcionalidade de Login com senha válida    | Estar com a Página Test Automation aberta | 1. Digitar Username: `admin`, Senha: `1234` <br> 2. Clicar em Login | Mensagem exibida: *“Login successful!”*                                                                          | Alta           |
