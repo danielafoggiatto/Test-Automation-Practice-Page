@@ -109,12 +109,9 @@ pytest -v --html=report.html --self-contained-html
 | **Resultado Geral Esperado** | Todas as funcionalidades funcionando conforme solicitado       
 
 ## Casos de Teste
-|
 
 | **Id** | **Objetivo**                                          | **Pré-condições**                         | **Passos**                                                          | **Resultado Esperado**                                                                                           | **Prioridade** |
-| ------ | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------- | ------------------------------
-
----------------------------------------------------------------------------------- | -------------- |
+| ------ | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------- |
 | 001    | Validar a funcionalidade de Login com senha válida    | Estar com a Página Test Automation aberta | 1. Digitar Username: `admin`, Senha: `1234` <br> 2. Clicar em Login | Mensagem exibida: *“Login successful!”*                                                                          | Alta           |
 | 002    | Validar a funcionalidade de Login com senha inválida  | Estar com a Página Test Automation aberta | 1. Digitar Username: `admin`, Senha: `1111` <br> 2. Clicar em Login | Mensagem exibida: *“Incorrect username or password.”*                                                            | Alta           |
 | 003    | Validar a funcionalidade de Login com campo em branco | Estar com a Página Test Automation aberta | 1. Acessar Login Form <br> 2. Clicar em Login                       | Aviso exibido: *“Preencha esse campo”*                                                                           | Médio          |
@@ -127,6 +124,7 @@ pytest -v --html=report.html --self-contained-html
 | 010    | Interagir com o iFrame                                | Estar com a Página Test Automation aberta | 1. Acessar iframe e clicar em *More information...*                 | Nova aba abre com mensagem *“Example Domains”*                                                                   | Baixa          |
 | 011    | Validar o Upload de arquivo                           | Estar com a Página Test Automation aberta | 1. Clicar no botão de upload <br> 2. Selecionar arquivo             | Exibir mensagem: *“Selected File: \[nome do arquivo]”*                                                           | Baixa          |
 | 012    | Validar se o Modal abre e fecha corretamente          | Estar com a Página Test Automation aberta | 1. Clicar em *Open Modal* <br> 2. Fechar com *Close Modal*          | Exibir mensagem: *“This is a modal window.”* e modal fechar após clicar em “x”                                   | Baixa          |
+
 
 ---
 
