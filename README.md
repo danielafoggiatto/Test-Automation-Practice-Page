@@ -96,6 +96,7 @@ pytest -v --html=report.html --self-contained-html
 * Relatórios HTML detalhados com pytest-html
 
 ---
+## Plano de Testes
 
 | **Seção**                    | **Descrição**                                                                                                                                                                                                                                    |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -108,7 +109,11 @@ pytest -v --html=report.html --self-contained-html
 | **Resultado Geral Esperado** | Todas as funcionalidades funcionando conforme solicitado                                                                                                                                                                                         |
 
 | **Id** | **Objetivo**                                          | **Pré-condições**                         | **Passos**                                                          | **Resultado Esperado**                                                                                           | **Prioridade** |
-| ------ | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------- |
+| ------ | ----------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------- | ------------------------------
+
+## Casos de Teste
+
+---------------------------------------------------------------------------------- | -------------- |
 | 001    | Validar a funcionalidade de Login com senha válida    | Estar com a Página Test Automation aberta | 1. Digitar Username: `admin`, Senha: `1234` <br> 2. Clicar em Login | Mensagem exibida: *“Login successful!”*                                                                          | Alta           |
 | 002    | Validar a funcionalidade de Login com senha inválida  | Estar com a Página Test Automation aberta | 1. Digitar Username: `admin`, Senha: `1111` <br> 2. Clicar em Login | Mensagem exibida: *“Incorrect username or password.”*                                                            | Alta           |
 | 003    | Validar a funcionalidade de Login com campo em branco | Estar com a Página Test Automation aberta | 1. Acessar Login Form <br> 2. Clicar em Login                       | Aviso exibido: *“Preencha esse campo”*                                                                           | Médio          |
